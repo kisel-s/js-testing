@@ -10,7 +10,7 @@ function countFriday13(fromDate, toDate) {
     const dateOfTheMonth = 13;
     do {
         fromDate.setDate(fromDate.getDate() + 1);
-        if (fromDate.getDate() == dateOfTheMonth && dateFrom.getDay() == dayOfTheMonth) {
+        if (fromDate.getDate() == dateOfTheMonth && fromDate.getDay() == dayOfTheMonth) {
             countdays++;
         }
     } while (fromDate <= toDate);
