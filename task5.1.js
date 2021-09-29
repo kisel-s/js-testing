@@ -2,8 +2,6 @@
 Эмулировать игру в кубики, 2 человека по очереди бросают кубик, каждый в итоге по 3 раза.
 У кого сумма трех бросков будет наибольшей - тот выиграл. Если суммы равны то ничья
 */
-var sum1 = 0;
-var sum2 = 0;
 const maxValue = 6;
 const maxAttemps = 3;
 
@@ -24,6 +22,8 @@ function makeDecision(sum1, sum2) {
 }
 
 function gameOfDice() {
+    var sum1 = 0;
+    var sum2 = 0;
     for (let i = maxAttemps; i > 0; i--) {
         sum1 += getRundom(maxValue);
         sum2 += getRundom(maxValue);
