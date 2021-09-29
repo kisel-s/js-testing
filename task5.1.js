@@ -5,6 +5,7 @@
 var sum1 = 0;
 var sum2 = 0;
 const maxValue = 6;
+const maxAttemps = 3;
 
 function getRundom(max) {
     return Math.floor(Math.random() * max + 1);
@@ -22,7 +23,7 @@ function makeDecision(sum1, sum2) {
     }
 }
 
-for (let i = 3; i > 0; i--) {
+for (let i = maxAttemps; i > 0; i--) {
     sum1 += getRundom(maxValue);
     sum2 += getRundom(maxValue);
 }
