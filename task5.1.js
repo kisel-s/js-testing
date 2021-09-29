@@ -23,8 +23,12 @@ function makeDecision(sum1, sum2) {
     }
 }
 
-for (let i = maxAttemps; i > 0; i--) {
-    sum1 += getRundom(maxValue);
-    sum2 += getRundom(maxValue);
+function gameOfDice() {
+    for (let i = maxAttemps; i > 0; i--) {
+        sum1 += getRundom(maxValue);
+        sum2 += getRundom(maxValue);
+    }
+    makeDecision(sum1, sum2);
 }
-makeDecision(sum1, sum2);
+
+gameOfDice();
