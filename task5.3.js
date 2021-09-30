@@ -89,7 +89,7 @@ function splitOnEqualFloatNumber(number, parts) {
     var  quotient = Math.round(number / parts);
     var result = [];
     for (let i = parts; i > 1; i--) {
-        let randomValue = (Math.random() + quotient - 1).toFixed(toFixedValue);
+        let randomValue = (Math.random() + quotient - 0.5).toFixed(toFixedValue);
         number -= randomValue;
         result.push(randomValue);
     }
